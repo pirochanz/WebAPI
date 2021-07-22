@@ -11,8 +11,18 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
-        @Html.Encode(ViewData["msg"])
-    </div>
+    @using(Html.BeginForm())
+    {
+        @Html.AntiForgeryToken();
+
+        <div> 
+            @Html.Encode(ViewData["msg"])
+
+            <input type="submit" name="Search" value="検索">
+            <input type="submit" name="Clear" value="クリア">
+        
+        </div>
+
+    }
 </body>
 </html>
