@@ -165,8 +165,12 @@ G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\ja\System.Web.Razor.resources.dll
 G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\ja\System.Web.WebPages.resources.dll
 G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\ja\System.Web.WebPages.Deployment.resources.dll
 G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\ja\System.Web.WebPages.Razor.resources.dll
-G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.csproj.AssemblyReference.cache
 G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.csproj.CoreCompileInputs.cache
 G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.csproj.CopyComplete
 G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.dll
 G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.pdb
+G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\EntityFramework.dll
+G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\EntityFramework.SqlServer.dll
+G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\EntityFramework.xml
+G:\GitTest18\WebAPI\MvcApl\MvcApl\bin\EntityFramework.SqlServer.xml
+G:\GitTest18\WebAPI\MvcApl\MvcApl\obj\Debug\MvcApl.csproj.AssemblyReference.cache

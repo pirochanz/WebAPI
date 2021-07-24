@@ -1,0 +1,80 @@
+﻿@using MvcApl.Models
+@model IEnumerable<MvcApl.Models.ComModel>
+
+    <h2>商品一覧</h2>
+    @Html.ActionLink("新規登録", "Create", null, new { @class = "btn btn-warning" })
+    <hr />
+
+    @using (Html.BeginForm("dispatch", null, null, FormMethod.Post, null))
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.Com_Id)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.ComName)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.ComDetail)
+                    </th>
+                    <th scope="col">
+                        修正
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var m in Model)
+                {
+                    <tr name="row">
+                        @*商品ID*@
+                        <td>
+                            @Html.DisplayFor(modelItem => m.Com_Id)
+                        </td>
+                        @*商品名*@
+                        <td>
+                            @Html.DisplayFor(modelItem => m.ComName)
+                        </td>
+                        @*商品詳細*@
+                        <td>
+                            @Html.DisplayFor(modelItem => m.ComDetail)
+                        </td>
+                        <td>
+                            @Html.ActionLink("編集", "Edit", new { id = m.Com_Id }, new { @class = "btn btn-primary" })
+
+                            @*
+                                @using (Html.BeginForm("dispatch", null, new { id = m.Com_Id }, FormMethod.Post, null))
+                                {
+                                    <p class="btn">
+                                        <input type="submit" name="submitButton" value="配送する" />
+                                    </p>
+
+                                    <p class="btn">
+                                        <input type="submit" name="submitButton" value="詳細" />
+                                    </p>
+                                }
+                            *@
+
+                            <p class="btn">
+                                <input type="submit" name="submitButton" value="配送する" formaction="@Url.Action("/dispatch", new { id = m.Com_Id, name = m.ComName })" />
+                                @*
+                                <input type="submit" name="submitButton" value="配送する" formaction="@Url.Action("dispatch", new { id = m.Com_Id, name = m.ComName })" />
+                                *@
+                            </p>
+
+                            <p class="btn">
+                                <input type="submit" name="submitButton" value="詳細" />
+                            </p>
+
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+    }
+
