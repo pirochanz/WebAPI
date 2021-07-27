@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using MvcApl.Extensions;
 using MvcApl.Models;
 using MvcApl.DAL;
-using System.Linq;
 using System.Web.Security;
 
 
